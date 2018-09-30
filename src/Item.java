@@ -1,5 +1,14 @@
-import java.util.Date;
+/**
+ * Author: Brandon Palomino
+ * Date: 9/28/2018
+ * Class: OOP JAVA
+ * Filename: Item.java - Interface file
+ *
+ */import java.util.Date;
 
+
+//Create an interface called Item that will force all classes
+// to implement the following functions.
 public interface Item {
 
   //A constant called manufacturer that would be set to “OracleProduction”

@@ -1,3 +1,14 @@
+/**
+ * Author: Brandon Palomino
+ * Date: 9/28/2018
+ * Class: OOP JAVA
+ * Filename: ItemType.java
+ *
+ */
+
+
+//Create an enum called ItemType that will store
+// the following information.
 public enum ItemType {
 
   // ItemType AUDIO = new ItemType ("AU");

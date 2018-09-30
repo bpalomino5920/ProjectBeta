@@ -1,5 +1,12 @@
-import java.util.Date;
+/**
+ * Author: Brandon Palomino
+ * Date: 9/28/2018
+ * Class: OOP JAVA
+ * Filename: Product.java
+ *
+ */
 
+import java.util.Date;
 
 public abstract class Product implements Item {
 

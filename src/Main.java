@@ -1,3 +1,11 @@
+/**
+ * Author: Brandon Palomino
+ * Date: 9/28/2018
+ * Class: OOP JAVA
+ * Filename: main.java
+ *
+ */
+
 import java.util.Date;
 
 public class Main {
