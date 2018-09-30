@@ -4,7 +4,9 @@
  * Class: OOP JAVA
  * Filename: Item.java - Interface file
  *
- */import java.util.Date;
+ */
+
+import java.util.Date;
 
 
 //Create an interface called Item that will force all classes
