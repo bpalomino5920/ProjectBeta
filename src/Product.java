@@ -8,66 +8,60 @@
 
 import java.util.Date;
 
-public abstract class Product implements Item {
+public class Product implements Item,
+    Comparable<Item> {
 
-  int serialNumber;
-  Date manufacuredOn;
-  String name;
+  protected int serialNumber;
+  protected String manufacturer;
+  protected Date manufacturedOn;
+  protected String name;
 
-  static int currentProductionNumber;
+  private static int currentProductionNumber = 1;
 
-  //Add a constructor that will take in the name of the product and set this to the field variable name. You
-  //will also assign a serial number from the currentProductionNumber. The currentProductionNumber
-  //should be incremented in readiness for the next instance.
-  //Set manufacturedOn as the current date and time.
-
-  public Product (String name) {
-    this.name = name;
-
-    //Add an integer class variable called currentProductionNumber. This will store the next number to be
-    //assigned to serialNumber.
-    serialNumber = currentProductionNumber++; //unary operator
-
-    //Set manufacturedOn as the current date and time.
-    manufacuredOn = new Date();
-
+  public Product(String name) {
+    setName(name);
+    currentProductionNumber++;
+    setProductionNumber(currentProductionNumber);
+    manufacturer = MANUFACTURER;
+    manufacturedOn = new Date();
   }
 
-  public void setCurrentProductionNumber(int productionNumber) {
-
-    serialNumber = productionNumber;
-
+  //set product number
+  public void setProductionNumber(int prodNumber) {
+    serialNumber = prodNumber;
   }
 
-  public void setName(String name){
-
+  //set name
+  public void setName(String name) {
     this.name = name;
 
   }
 
+  // get names
   public String getName() {
     return name;
   }
 
-  public Date getManufactureDate(){
-    return manufacuredOn;
+  //get Manufacture
+  public Date getManufactureDate() {
+    return manufacturedOn;
   }
 
-  public int getSerialNumber(){
-
+  //get Serial Number
+  public int getSerialNumber() {
     return serialNumber;
-
   }
 
-  //Add a toString method that will return the following
-  public String toString(){
-
-    return  "Manufacturer : " + manufacturer + "\n "
-        + "Serial Number : " + serialNumber + "\n"
-        + "Date : " + manufacuredOn + "\n"
-        + "Name : " + name;
-
+  // Output information
+  public String toString() {
+    String str = "Manufacturer: " + manufacturer + "\n";
+    str += "Serial Number: " + serialNumber + "\n";
+    str += "Date: " + manufacturedOn + "\n";
+    str += "Name: " + name;
+    return str;
 
   }
-
+  public int compareTo(Item o) {
+    return name.compareTo(o.getName()); //comparing Names
+  }
 }

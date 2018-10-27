@@ -8,23 +8,12 @@
 
 
 //Create an enum called ItemType that will store
-// the following information.
+// the following information. AUDIO, VISUAL, AudioMobile, VisualMobile
+  // changed form on 10/26
 public enum ItemType {
 
-  // ItemType AUDIO = new ItemType ("AU");
-  AUDIO("AU"),
-  VISUAL("VI"),
-  AUDIO_MOBILE("AM"),
-  VISIUAL_MOBILE("VM");
-
-  private final String code;
-
-  ItemType(String code){
-    this.code = code;
-  }
-
-  public String getCode(){
-    return code;
-  }
-
+  AU,
+  VI,
+  AM,
+  VM;
 }
