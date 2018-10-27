@@ -1,10 +1,12 @@
 /**
  * Author: Brandon Palomino
- * Date: 9/28/2018
+ * Date: 9/30/2018
  * Class: OOP JAVA
  * Filename: main.java
  *
  */
+
+//Update main. Old one had missing code
 
 import java.util.ArrayList;
 import java.util.Collections;
