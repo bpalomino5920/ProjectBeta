@@ -19,7 +19,7 @@ public class AudioPlayer extends Product implements MultimediaControl, Comparabl
   public AudioPlayer(String name, String specification) {
     super(name);
     audioSpecification = specification;
-    mediaType = ItemType.AU;
+    mediaType = ItemType.AUDIO;
   }
 
   public void play() {

@@ -15,12 +15,6 @@ public class MoviePlayer extends Product implements MultimediaControl,
   private Screen screen;
   private MonitorType montiorType;
 
-  public MoviePlayer(String name) {
-    super(name);
-    screen = new Screen("1024x768", 60, 10);
-    montiorType = MonitorType.LCD;
-
-  }
 
   public MoviePlayer(String name, Screen screen, MonitorType type) {
     super(name);

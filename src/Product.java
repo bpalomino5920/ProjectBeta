@@ -7,6 +7,8 @@
  */
 
 import java.util.Date;
+import java.util.ArrayList;
+
 
 public class Product implements Item,
     Comparable<Item> {
@@ -24,6 +26,9 @@ public class Product implements Item,
     setProductionNumber(currentProductionNumber);
     manufacturer = MANUFACTURER;
     manufacturedOn = new Date();
+  }
+
+  public static void printType(ArrayList<Product> products, Class<?> audioPlayer) {
   }
 
   //set product number

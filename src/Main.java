@@ -36,13 +36,13 @@ public class Main {
 
     AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
 
-    MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
+    //MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
 
-        new Screen(" 720x480", 40, 22), MonitorType.LCD);
+        //new Screen(" 720x480", 40, 22), MonitorType.LCD);
 
-    MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
+    //MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
 
-        new Screen("1366x768", 40, 22), MonitorType.LED);
+        //new Screen("1366x768", 40, 22), MonitorType.LED);
 
 // Write one line of code here to create the collection
 
@@ -52,9 +52,9 @@ public class Main {
 
     products.add(a2);
 
-    products.add(m1);
+    //products.add(m1);
 
-    products.add(m2);
+    //products.add(m2);
 
     return products;
   }

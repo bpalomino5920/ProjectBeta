@@ -12,7 +12,7 @@
   // changed form on 10/26
 public enum ItemType {
 
-  AU,
+  AUDIO,
   VI,
   AM,
   VM;
