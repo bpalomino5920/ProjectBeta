@@ -68,7 +68,7 @@ public class EmployeeInfo {
     }
 
     private String getDeptId(){
-        System.out.println("Please enter your department ID:");
+        System.out.println("Please enter the department ID:");
         return in.nextLine();
     }
 
@@ -104,7 +104,7 @@ public class EmployeeInfo {
     }
     @Override
     public String toString(){
-        return "Employee Code: " + getCode() + "\n" +
-                "Department Number: " + getId();
+        return "Employee Code : " + getCode() + "\n" +
+                "Department Number : " + getId();
     }
 }
